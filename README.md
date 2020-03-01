@@ -2,4 +2,4 @@
 
 Automation Scripting for Windows Wi-Fi Testing.
 
-1) Enable/Disabe NIC
+1) Enable/Disable NIC
