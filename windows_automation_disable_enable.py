@@ -64,7 +64,7 @@ if is_admin():
         print('False Count:' + str(false_count))
         sleep(5)
     print('Test finished Running!')
-    if true_count == runs:
+    if true_count == runs-1:
         print('Test passed!')
     else:
         print('Test Failed!')
