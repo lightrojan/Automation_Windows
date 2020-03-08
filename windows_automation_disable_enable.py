@@ -49,6 +49,7 @@ if is_admin():
         status()
         sleep(5)
         if internet_on() == False:
+            print("Not Connected to internet, NIC is disabled...")
             print("Enabling card...")
             enable()
             print("Connect to wifi...")
@@ -56,8 +57,10 @@ if is_admin():
             status()
             sleep(5)
             if internet_on() == True:
+                print("Pinged Google DNS successfully!")
                 true_count +=1
             else:
+                print("Pinged Google DNS unsuccessfully...")
                 false_count +=1
         i += 1
         print('True Count:' + str(true_count))
