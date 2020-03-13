@@ -9,6 +9,7 @@ Disable/Enable Test for 2.4G/5G
 
 import os
 import ctypes, sys
+import pyautogui
 from time import sleep
 import time
 from urllib.request import urlopen
@@ -41,7 +42,7 @@ def is_admin():
 
 if is_admin():
     assert internet_on() == True, 'Not connected' #Error checking
-
+    wifiLocation = pyautogui.locateOnScreen('calc7key.png')
     for i in range(1,runs):
         print('=======Running Test Number '+str(i)+'=======')
         print("Disabling card...")
