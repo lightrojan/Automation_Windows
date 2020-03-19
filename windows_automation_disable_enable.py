@@ -42,7 +42,11 @@ def is_admin():
 
 if is_admin():
     assert internet_on() == True, 'Not connected' #Error checking
-    wifiLocation = pyautogui.locateOnScreen('calc7key.png')
+    #x, y = pyautogui.locateCenterOnScreen('wifi.png')
+    #pyautogui.click(x, y)
+    globe = pyautogui.locateCenterOnScreen('globe.png')
+    #wifiLocation = pyautogui.locateOnScreen('wifi.png')
+    #globeLocation = pyautogui.locateOnScreen('globe.png')
     for i in range(1,runs):
         print('=======Running Test Number '+str(i)+'=======')
         print("Disabling card...")
@@ -54,6 +58,7 @@ if is_admin():
             print("Enabling card...")
             enable()
             print("Connect to wifi...")
+            pyautogui.click(globe)
             sleep(5)
             status()
             sleep(5)

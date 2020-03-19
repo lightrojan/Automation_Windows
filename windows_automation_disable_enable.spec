@@ -4,7 +4,7 @@ block_cipher = None
 
 
 a = Analysis(['windows_automation_disable_enable.py'],
-             pathex=['C:\\Users\\zhong\\github\\Automation_Windows'],
+             pathex=['C:\\Users\\tiongzhongcheng\\github\\Automation_Windows'],
              binaries=[],
              datas=[],
              hiddenimports=[],
